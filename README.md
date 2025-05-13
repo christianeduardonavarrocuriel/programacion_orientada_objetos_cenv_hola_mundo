@@ -25,7 +25,7 @@ python3 -m venv .venv
 sorce .venv/bin/activate
 ````
 
-## 4. Aztualizar **pip** dentro del **Virtual Environment**
+## 4. Actualizar **pip** dentro del **Virtual Environment**
 
 Se actualiza la versión instalada de **pip** para poder descargar las ultimas versiones de las librerias
 
@@ -49,3 +49,41 @@ Se instalan las librerias que se van a ocupar
 pip install web.py
 ````
 
+## 7. Crear el archivo **requirements.txt**
+
+Se crea el archivo **requirements.txt** con las librerias y el número de versión utilizadas.
+
+````shell
+pip freeze > requirements.txt
+````
+
+## 8. Crear el archivo **runtime.txt**
+
+Se crea el archivo **runtime.txt** con la versión de Python3 que se esta utilizando en el proyecto
+
+````shell
+python3 -V > runtime.txt
+````
+
+## 9. Indexar los archivos creados con **git**
+
+Se indexan los archivos y cambios realizados en el proyecto
+
+````shell
+git add .
+````
+## 10. Generar un **commit**
+
+Se realiza un **commit** con un texto que describa los cambios realizados en el proyecto
+
+````shell
+git commit -m "CREATED configuracion basica"
+````
+
+## 11. Realizar un **push**
+
+Se realiza un **push** para subir los cambios realizados al repositorio de **Github**
+
+````shell
+git push -u origin main
+````
