@@ -22,7 +22,7 @@ python3 -m venv .venv
 ## 3. Iniciar el **Virtual Environment** para instalar las librerias necesarias para el proyecto
 
 ````shell
-sorce .venv/bin/activate
+source .venv/bin/activate
 ````
 
 ## 4. Actualizar **pip** dentro del **Virtual Environment**
